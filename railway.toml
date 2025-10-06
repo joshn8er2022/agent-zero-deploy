@@ -1,0 +1,8 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "DockerfileLocal"
+
+[deploy]
+startCommand = "/exe/initialize.sh"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
